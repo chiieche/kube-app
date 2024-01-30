@@ -40,9 +40,9 @@ spec:
       initContainers:
         - name: busybox
           image: busybox:latest
-          args: ["rm ", "-rf", "/var/lib/mysql/lost+found"]
+          args: ["rm", "-rf", "/var/lib/mysql/lost+found"]
           volumeMounts:
-          - mountPath: /var/lib/mysql/lost
+          - mountPath: /var/lib/mysql
             name: vpro-db-data
 
 
